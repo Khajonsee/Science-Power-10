@@ -843,7 +843,24 @@ body {
 }
 
 .footer span { color: var(--gold-light); }
-
+/* Download banner */
+.download-banner {
+  margin-top: 28px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  border-radius: 16px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.download-info { display: flex; align-items: center; gap: 16px; }
+.download-icon { width: 52px; height: 52px; background: rgba(201,146,42,0.2); border: 1px solid rgba(201,146,42,0.4); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
+.download-title { color: white; font-weight: 700; font-size: 17px; margin-bottom: 4px; }
+.download-sub { color: rgba(255,255,255,0.6); font-size: 13px; }
+.download-btn { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: var(--navy); font-weight: 700; font-size: 15px; padding: 13px 28px; border-radius: 30px; text-decoration: none; white-space: nowrap; box-shadow: 0 4px 16px rgba(201,146,42,0.35); transition: transform 0.2s, box-shadow 0.2s; }
+.download-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(201,146,42,0.5); }
 /* ANIMATIONS */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
@@ -1352,7 +1369,22 @@ body {
         </table>
       </div>
     </div>
-
+<!-- DOWNLOAD BANNER -->
+      <div class="download-banner">
+        <div class="download-info">
+          <div class="download-icon">📄</div>
+          <div>
+            <div class="download-title">เอกสารหลักสูตรฉบับสมบูรณ์ · ว31285</div>
+            <div class="download-sub">คู่มือครู · สื่อการสอน 13 ชิ้น · Template ชิ้นงาน · Rubric ประเมิน</div>
+          </div>
+        </div>
+        <a class="download-btn"
+           href="https://github.com/khajonsee/Science-Power-10/raw/main/%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3_%E0%B8%A731285_%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B4%E0%B8%9A.docx"
+           download>
+          ⬇️ ดาวน์โหลด (.docx)
+        </a>
+      </div>
+    </div>
     <!-- COURSE 2 -->
     <div id="c2" class="course-panel">
       <div class="course-header" data-num="2">
